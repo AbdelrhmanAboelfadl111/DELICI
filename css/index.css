@@ -837,12 +837,32 @@ section.story .col2 .item .imgButton .headshaped .img2 {
 section.special {
   position: relative;
 }
+@media (max-width: 1300px) {
+  section.special .title h5 {
+    font-size: 25px !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 1300px) {
+  section.special .title h5 {
+    font-size: 30px !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1300px) {
+  section.special .title h5 {
+    font-size: 40px !important;
+  }
+}
 section.special .dishTitle h2 {
   font-size: 50px;
 }
 @media (max-width: 1300px) {
   section.special .dishTitle h2 {
-    font-size: 43px;
+    font-size: 35px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1300px) {
+  section.special .dishTitle h2 {
+    font-size: 40px;
   }
 }
 section.special .dishPrise .oldPrise {
@@ -853,6 +873,19 @@ section.special .dishPrise .oldPrise {
 section.special .dishPrise .newPrise {
   font-size: 25px;
   margin-left: 10px !important;
+}
+@media (max-width: 1300px) {
+  section.special .bookBtn {
+    display: flex;
+    flex-direction: initial;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 769px) and (max-width: 1300px) {
+  section.special .bookBtn {
+    display: block !important;
+  }
 }
 section.special .col1 .mainDish {
   padding: 20px;
@@ -1720,109 +1753,109 @@ footer p a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/imgs/L-1.png");
+  background-image: url("../imgs/L-1.png");
 }
 .pop-up-menu .pop-up-menu-box .head .coverCarosal .carousel .carousel-inner.carousel-inner2 .item2 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/imgs/L-2.png");
+  background-image: url("../imgs/L-2.png");
 }
 .pop-up-menu .pop-up-menu-box .head .coverCarosal .carousel .carousel-inner.carousel-inner2 .item3 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/imgs/L-3.png");
+  background-image: url("../imgs/L-3.png");
 }
 .pop-up-menu .pop-up-menu-box .head .coverCarosal .carousel .carousel-inner.carousel-inner2 .item4 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/imgs/L-4.png");
+  background-image: url("../imgs/L-4.png");
 }
 .pop-up-menu .pop-up-menu-box .head .coverCarosal .carousel .carousel-inner.carousel-inner2 .item5 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/imgs/L-5.png");
+  background-image: url("../imgs/L-5.png");
 }
 .pop-up-menu .pop-up-menu-box .head .coverCarosal .carousel .carousel-inner.carousel-inner2 .item6 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/imgs/L-6.png");
+  background-image: url("../imgs/L-6.png");
 }
 .pop-up-menu .pop-up-menu-box .head .coverCarosal .carousel .carousel-inner.carousel-inner3 .item1 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/imgs/Di-1.webp");
+  background-image: url("../imgs/Di-1.webp");
 }
 .pop-up-menu .pop-up-menu-box .head .coverCarosal .carousel .carousel-inner.carousel-inner3 .item2 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/imgs/Di-2.webp");
+  background-image: url("../imgs/Di-2.webp");
 }
 .pop-up-menu .pop-up-menu-box .head .coverCarosal .carousel .carousel-inner.carousel-inner3 .item3 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/imgs/Di-3.webp");
+  background-image: url("../imgs/Di-3.webp");
 }
 .pop-up-menu .pop-up-menu-box .head .coverCarosal .carousel .carousel-inner.carousel-inner3 .item4 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/imgs/Di-4.webp");
+  background-image: url("../imgs/Di-4.webp");
 }
 .pop-up-menu .pop-up-menu-box .head .coverCarosal .carousel .carousel-inner.carousel-inner3 .item5 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/imgs/Di-5.webp");
+  background-image: url("../imgs/Di-5.webp");
 }
 .pop-up-menu .pop-up-menu-box .head .coverCarosal .carousel .carousel-inner.carousel-inner3 .item6 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/imgs/Di-6.webp");
+  background-image: url("../imgs/Di-6.webp");
 }
 .pop-up-menu .pop-up-menu-box .head .coverCarosal .carousel .carousel-inner.carousel-inner4 .item1 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/imgs/Dr-1.webp");
+  background-image: url("../imgs/Dr-1.webp");
 }
 .pop-up-menu .pop-up-menu-box .head .coverCarosal .carousel .carousel-inner.carousel-inner4 .item2 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/imgs/Dr-2.webp");
+  background-image: url("../imgs/Dr-2.webp");
 }
 .pop-up-menu .pop-up-menu-box .head .coverCarosal .carousel .carousel-inner.carousel-inner4 .item3 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/imgs/Dr-3.webp");
+  background-image: url("../imgs/Dr-3.webp");
 }
 .pop-up-menu .pop-up-menu-box .head .coverCarosal .carousel .carousel-inner.carousel-inner4 .item4 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/imgs/Dr-4.webp");
+  background-image: url("../imgs/Dr-4.webp");
 }
 .pop-up-menu .pop-up-menu-box .head .coverCarosal .carousel .carousel-inner.carousel-inner4 .item5 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/imgs/Dr-5.webp");
+  background-image: url("../imgs/Dr-5.webp");
 }
 .pop-up-menu .pop-up-menu-box .head .coverCarosal .carousel .carousel-inner.carousel-inner4 .item6 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/imgs/Dr-6.webp");
+  background-image: url("../imgs/Dr-6.webp");
 }
 .pop-up-menu .pop-up-menu-box .head .coverCarosal .carousel .carousel-inner .carousel-item {
   position: relative;

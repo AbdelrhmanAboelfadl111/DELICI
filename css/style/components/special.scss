@@ -1,11 +1,27 @@
 @use "../abstracts" as *;
 section.special{
     position: relative;
+    .title{
+        h5{
+            @include responsive(350){
+                font-size: 25px!important;
+            }
+            @include responsive(850){
+                font-size: 30px!important;
+            }
+            @include responsive(1050){
+                font-size: 40px!important;
+            }
+        }
+    }
     .dishTitle{
         h2{
             font-size: 50px;
             @include responsive(350) {
-                font-size: 43px;
+                font-size: 35px;
+            }
+            @include responsive(850) {
+                font-size: 40px;
             }
         }
     }
@@ -18,6 +34,17 @@ section.special{
         .newPrise{
             font-size: 25px;
             margin-left: 10px !important;
+        }
+    }
+    .bookBtn{
+        @include responsive(350) {
+            @include flexCenter();
+        }
+        @include responsive(850) {
+            display: block!important;
+        }
+        button{
+            
         }
     }
     .col1{
