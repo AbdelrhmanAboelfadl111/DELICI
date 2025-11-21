@@ -1,0 +1,216 @@
+@use "../abstracts" as *;
+@use "../abstracts" as *;
+
+section.chef {
+    .imgBg {
+        @include Position($type: absolute, $t: 0, $r: 0);
+        @include size($w: 50px, $h: 100%);
+
+        @include responsive(350) {
+            width: 20px;
+        }
+    }
+
+    .imgBg2 {
+        left: 0;
+    }
+    .title{
+        h5{
+            @include responsive(350){
+                font-size: 24px!important;
+            }
+            @include responsive(1050){
+                font-size: 28px!important;
+            }
+        }
+    }
+
+    .chefText {
+        h2 {
+            font-size: 45px;
+
+            @include responsive(350) {
+                font-size: 35px;
+            }
+
+            @include responsive(650) {
+                font-size: 45px;
+            }
+        }
+
+        p {
+            font-size: 16px;
+
+            @include responsive(350) {
+                width: 100% !important;
+                font-size: 12px;
+            }
+
+            @include responsive(650) {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .chefImgs {
+        .col1,
+        .col3 {
+            transform: translateY(-90px);
+            @include responsive(350) {
+                transform: translateY(0);
+            }
+            @include responsive(1050) {
+                transform: translateY(-90px);
+            }
+        }
+        .column {
+            .item {
+                padding: 20px;
+                .head {
+                    @include flexCenter();
+                    position: relative;
+                    border-radius: 15px;
+                    overflow: hidden;
+                    &:hover {
+                        .shape {
+                            top: -150%;
+                            right: 80%;
+                        }
+                        .img1 {
+                            transform: rotateY(360deg);
+                        }
+                        .chefMedia{
+                            opacity: 1!important;
+                            i{
+                                transform: translateY(0)!important;
+                                opacity: 1!important;
+                            }
+                        }
+                    }
+                    .shape {
+                        @include Position($type: absolute, $t: 100%, $r: -10%);
+                        @include size($w: 70px, $h: 200%);
+                        background-color: rgba(186, 186, 186, 0.358);
+                        backdrop-filter: blur(10px);
+                        box-shadow: rgba(169, 169, 169, 0.671) -10px 5px 15px;
+                        transform: rotate(45deg);
+                        transition: all 0.8s;
+                        z-index: 3;
+                    }
+                    .img1 {
+                        width: 180px;
+                        transition: all 1s;
+                    }
+                    .chefInfo{
+                        position: absolute;
+                        .chefMedia{
+                            @include Position($type: absolute, $t: 0, $l: 0);
+                            @include size($w:100%,$h:100%);
+                            @include flexCenter();
+                            background-color: rgba(115, 115, 115, 0.559);
+                            opacity: 0;
+                            transition: all 0.6s;
+                            ul{
+                                @include flexCenter();
+                                list-style: none;
+                                padding: 0;
+                                li{
+                                    padding: 15px;
+                                    transition: all 0.5s!important;
+                                    &.medai1 {
+                                        a{
+                                            i {
+                                                color: #1877f2 !important;
+                                                transition:transform 0.5s ease 0.2s,opacity 0.5s ease 0.2s;
+                                            }
+                                        } 
+                                    }
+                                    &.medai2{
+                                        i{
+                                            color: #c53752 !important;
+                                            transition: transform 0.5s ease 0.4s, opacity 0.5s ease 0.4s;
+                                        }
+                                    }
+                                    &.medai3{
+                                        a{
+                                            i {
+                                                background-color: black !important;
+                                                color: white !important;
+                                                transition: transform 0.5s ease 0.6s, opacity 0.5s ease 0.6s;
+                                            }
+                                        }
+                                    }
+                                    &.medai4 {
+                                        a{
+                                            i {
+                                                color: #1877f2 !important;
+                                                transition: transform 0.5s ease 0.8s, opacity 0.5s ease 0.8s;
+                                            }
+                                        } 
+                                    }
+                                    &:hover {
+                                            &.medai1 {
+                                                i {
+                                                    color: white!important;
+                                                    background-color: #1877f2 !important;
+                                                }
+                                            }
+                                            &.medai2 {
+                                                i {
+                                                    color: white !important;
+                                                    background-color: #c53752 !important;
+                                                }
+                                            }
+                                            &.medai3 {
+                                                i {
+                                                    color: black !important;
+                                                    background-color: white !important;
+                                                }
+                                            }
+                                            &.medai4 {
+                                                i {
+                                                    color: white !important;
+                                                    background-color: #1877f2 !important;
+                                                }
+                                            }
+                                        }
+                                    a{
+                                        color: white;
+                                        text-decoration: none;
+                                        
+                                        i{
+                                            @include size($w: 35px, $h: 35px);
+                                            @include flexCenter();
+                                            background-color: black;
+                                            border-radius: 10px;
+                                            font-size: 20px;
+                                            transform: translateY(-30px);
+                                            opacity: 0;
+                                            transition: all 0.5s;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .img2 {
+                            width: 300px;
+                            height: 400px;
+                            
+                        }
+                    }
+                }
+                .body {
+                    h3 {
+                        font-size: 35px;
+                    }
+
+                    a {
+                        color: $x;
+                        font-size: 17px;
+                        padding: 3px;
+                    }
+                }
+            }
+        }
+    }
+}

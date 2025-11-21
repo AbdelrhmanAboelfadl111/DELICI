@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/lines.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>DELICI</title>
+</head>
+<body>
+    <nav id="NAV" class="navBar">
+        <div class="nav-logo">
+            <a href=""><img src="imgs/logo.png"></a>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a  href="#Header">Home</a></li>
+                <li><a href="#About">About us</a></li>
+                <li><a href="#Story">Our Story</a></li>
+                <li><a href="#special">Special Dish</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#Chef">Our Chefs</a></li>
+                <li><a href="#Book">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="nav-button" onclick="openPopUp('pop-up-nav')">
+            <img src="imgs/skills.gif">
+        </div>
+    </nav>
+    <section id="Header" class="header">
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade h-100 w-100">
+            <div class="carousel-indicators">
+                <div class="cover">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true"
+                        aria-label="Slide 1" onclick="playSound('#myAudio')"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" onclick="playSound('#myAudio')"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" onclick="playSound('#myAudio')"></button>
+                </div>
+            </div>
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active item1 h-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6 class="font1 color1">DELIGHTFUL EXPERIENCE</h6>
+                        <img src="imgs/separator.svg">
+                        <h2 class="font1  ">Flavors Inspired By<br>
+                        The Seasons</h2>
+                        <p class="font2  ">Come with family & feel the joy of mouthwatering food</p>
+                        <button class="btn buttonShaped menu mt-3">VIEW OUR MENU</button>
+                    </div>
+                </div>
+                <div class="carousel-item item2 h-100">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h6 class="font1 color1">AMAZING & DELICIOUS</h6>
+                    <img src="imgs/separator.svg">
+                    <h2 class="font1  mt-3">Where Every Flavor<br>
+                    Tells A Story</h2>
+                    <p class="font2  mt-3">Come with family & feel the joy of mouthwatering food</p>
+                    <button class="btn buttonShaped mt-3 menu">VIEW OUR MENU</button>
+                    </div>
+                </div>
+                <div class="carousel-item item3 h-100">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h6 class="font1 color1">TRADATIONAL & HYGINE</h6>
+                    <img src="imgs/separator.svg">
+                    <h2 class="font1  mt-3">For The Love Of<br>
+                    Delicious Food</h2>
+                    <p class="font2  mt-3">Come with family & feel the joy of mouthwatering food</p>
+                    <button class="btn buttonShaped mt-3 menu">VIEW OUR MENU</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev control" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" onclick="playSound('#myAudio')">
+                <i class="fa-solid fa-angle-left iconControll"></i>
+                <span class="visually-hidden">Previous</span>
+                
+            </button>
+            <button class="carousel-control-next control" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next" onclick="playSound('#myAudio')" >
+                <i class="fa-solid fa-angle-right iconControll"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <audio id="myAudio" src="adiuo/slide-click-92152.mp3"></audio>
+        </div>
+        <div class="BookTable" onclick="stopClose('pop-up-book-box');openPopUp('pop-up-book')">
+            <img src="imgs/book-icon-1.png">
+            <p class="font2 m-0 mt-2">BOOK A <br>TABLE</p>
+        </div>
+    </section>
+    <section id="About" class="about bgImg py-5">
+        <div class="container">
+            <img class="imgBg imgBg1" src="imgs/pattern-9.svg">
+            <img class="imgBg imgBg2" src="imgs/pattern-9.svg">
+            <div class="title w-100 text-center">
+                <h5 class="font1 color1">FLAVORS FOR ROYALTY</h5>
+                <img src="imgs/separator.svg">
+            </div>
+            <div class="row aboutText text-center text-white mt-3 p-0">
+                <h2 class="font1">We Offer Top Notch</h2>
+                <p class="font2 w-50 m-auto">Lorem Ipsum is simply dummy text of the printing and<br> typesetting industry lorem Ipsum has been the industrys<br> standard
+                dummy text ever.</p>
+            </div>
+            <div class="row aboutImgs mt-3">
+                <div class="col-lg-4 col1 column">
+                    <div class="item item1">
+                        <div class="head">
+                            <div class="shape"></div>
+                            <img src="imgs/pattern-8.svg" class="img1">
+                            <img src="imgs/offer-image-1.jpg" class="img2">
+                        </div>
+                        <div class="body text-center mt-3">
+                            <h3 class="font1 text-white">Breakfast</h3>
+                            <a href="#Menu" class="anchorShaped font2">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col2 column">
+                    <div class="item item1">
+                        <div class="head">
+                            <div class="shape"></div>
+                            <img src="imgs/pattern-8.svg" class="img1">
+                            <img src="imgs/offer-image-2.jpg" class="img2">
+                        </div>
+                        <div class="body text-center mt-3">
+                            <h3 class="font1 text-white">Appetizers</h3>
+                            <a href="#Menu" class="anchorShaped font2">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col3 column">
+                    <div class="item item1">
+                        <div class="head">
+                            <div class="shape"></div>
+                            <img src="imgs/pattern-8.svg" class="img1">
+                            <img src="imgs/offer-image-3.jpg" class="img2">
+                        </div>
+                        <div class="body text-center mt-3">
+                            <h3 class="font1 text-white">Drinks</h3>
+                            <a href="#Menu" class="anchorShaped font2">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Story" class="story bgImg py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-6 col1 colmun">
+                    <div class="title iconed w-100 text-center">
+                        <div class="titleCover">
+                            <img src="imgs/spell-book.gif">
+                            <h5 class="font1 color1 mt-3">OUR STORY</h5>
+                        </div>
+                        <img class="separator" src="imgs/separator.svg">
+                    </div>
+                    <div class="bigText text-center text-white">
+                        <h2 class="font1">Every Flavor Tells
+                        A Story</h2>
+                    </div>
+                    <div class="storyText text-center text-white">
+                        <p class="font2">Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the industrys standard
+                        dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book It
+                        has survived not only five centuries, but also the leap into.</p>
+                    </div>
+                    <div class="book text-center text-white">
+                        <p class="font2 ">Book Through Call</p>
+                        <a href="tel:+20-102-108-0042" class="anchorShaped color1">
+                            +20-102-108-0042
+                        </a>
+                    </div>
+                    <div class="bookBtn w-100 mt-4"><button class="btn buttonShaped  shaped"><a href="#Menu" class="color1">Read More</a></button></div>
+                </div>
+                <div class="col-md-6 col2 colmun ">
+                    <div class="item">
+                        <div class="majorImg">
+                            <img src="imgs/image-1.jpg">
+                        </div>
+                        <div class="imgTop">
+                            <img class="img1" src="imgs/badge-1-bg.png">
+                            <img class="img2" src="imgs/badge-1.png">
+                        </div>
+                        <div class="imgButton">
+                            <div class="headshaped">
+                                <img src="imgs/pattern-8.svg" class="img1">
+                                <img src="imgs/image-2.jpg" class="img2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="special" class="special bgImg py-5 overflow-hidden">
+        <img class="imgBg imgBg1" src="imgs/pattern-9.svg">
+        <img class="imgBg imgBg2" src="imgs/pattern-9.svg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col1 column">
+                    <div class="mainDish">
+                        <div class="head headshaped w-75 me-auto">
+                            <div class="shape"></div>
+                            <img src="imgs/pattern-8.svg" class="img1">
+                            <img src="imgs/offer-image-1.jpg" class="img2">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col2 column">
+                    <div class="title iconed w-100 text-center">
+                        <div class="titleCover">
+                            <img src="imgs/restaurant.gif">
+                            <h5 class="font1 color1">SPECIAL DISH</h5>
+                        </div>
+                        <img class="separator" src="imgs/separator.svg">
+                    </div>
+                    <div class="dishTitle mt-3 text-white">
+                        <h2 class="font1 color1">Lobster Tortellini</h2>
+                    </div>
+                    <div class="dishText mt-3">
+                        <p class="font2 text-white">Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the industrys standard
+                        dummy text ever since the when an unknown printer took a galley of type.</p>
+                    </div>
+                    <div class="dishPrise d-flex mt-3">
+                        <p class="oldPrise font1 m-0"><del>$40.00</del></p>
+                        <p class="newPrise font1  color1 m-0">$20.00</p>
+                    </div>
+                    <div class="bookBtn w-100 mt-3">
+                        <button class="btn buttonShaped shaped"><a href="#Menu" class="color1">VIEW ALL MENU</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Menu" class="menu bgImg py-5 overflow-hidden">
+        <div class="container">
+            <div class="title iconed w-100 text-center">
+                <div class="titleCover">
+                    <img src="imgs/recipe-book.gif">
+                    <h5 class="font1 color1">SPECIAL SELECTION</h5>
+                </div>
+                <img class="separator" src="imgs/separator.svg">
+            </div>
+            <div class="mainText w-100 text-center mt-2">
+                <h2 class="font1">Delicious Menu</h2>
+            </div>
+            <div class="mainMenu w-100">
+                <div class="cover">
+                    <ul class="nav nav-pills w-100 mb-3 mt-3 text-white" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link anchorShaped position-relative active" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">BreakFast</button>
+                        </li>
+                        <span><img src="imgs/menu.gif"></span>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link anchorShaped position-relative" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">Lunch</button>
+                        </li>
+                        <span><img src="imgs/menu.gif"></span>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link anchorShaped position-relative" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                aria-selected="false">Dinner</button>
+                        </li>
+                        <span><img src="imgs/menu.gif"></span>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link anchorShaped position-relative" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-drinks" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">Drinks</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane text-white fade show active w-100" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                    tabindex="0">
+                        <div class="row w-100 ">
+                            <div class="col-md-6 col1 column">
+                                <div class="item">
+                                    <div class="meal1 meal">
+                                        <div class="mealImg">
+                                            <div class="shape"><i class="fa-solid fa-compress"onclick="openPopUp('pop-up-menu');stopClose('pop-up-menu-box')"></i></div>
+                                            <img src="imgs/BF-1.webp">
+                                        </div>
+                                        <div class="mealText">
+                                            <div class="upper">
+                                                <h4 class="font1 color1 mb-0">Everyday Pancakes</h4>
+                                                <div class="line"><img src="imgs/letter-l.gif"></div>
+                                                <h4 class="prise font1 color1 mb-0">$35.50</h4>
+                                            </div>
+                                            <div class="down">
+                                                <p class="m-0 font2">Lorem ipsum dolor, sit amet consectetur adipisicingelit. Nihil, incidunt.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="meal2 meal">
+                                        <div class="mealImg">
+                                            <div class="shape"><i class="fa-solid fa-compress"onclick="openPopUp('pop-up-menu');stopClose('pop-up-menu-box')"></i></div>
+                                            <img src="imgs/BF-2.webp">
+                                        </div>
+                                        <div class="mealText">
+                                            <div class="upper">
+                                                <h4 class="font1 color1 mb-0">Waffles</h4>
+                                                <div class="line"><img src="imgs/letter-l.gif"></div>
+                                                <h4 class="prise font1 color1 mb-0">$38.50</h4>
+                                            </div>
+                                            <div class="down">
+                                                <p class="m-0 font2">Lorem ipsum dolor, sit amet consectetur adipisicingelit. Nihil, incidunt.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="meal3 meal">
+                                        <div class="mealImg">
+                                            <div class="shape"><i class="fa-solid fa-compress"onclick="openPopUp('pop-up-menu');stopClose('pop-up-menu-box')"></i></div>
+                                            <img src="imgs/BF-3.webp">
+                                        </div>
+                                        <div class="mealText">
+                                            <div class="upper">
+                                                <h4 class="font1 color1 mb-0">French Toast</h4>
+                                                <div class="line"><img src="imgs/letter-l.gif"></div>
+                                                <h4 class="prise font1 color1 mb-0">$20.50</h4>
+                                            </div>
+                                            <div class="down">
+                                                <p class="m-0 font2">Lorem ipsum dolor, sit amet consectetur adipisicingelit. Nihil, incidunt.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col2 column">
+                                <div class="item">
+                                    <div class="meal4 meal">
+                                        <div class="mealImg">
+                                            <div class="shape"><i class="fa-solid fa-compress"onclick="openPopUp('pop-up-menu');stopClose('pop-up-menu-box')"></i></div>
+                                            <img src="imgs/BF-4.webp">
+                                        </div>
+                                        <div class="mealText">
+                                            <div class="upper">
+                                                <h4 class="font1 color1 mb-0">Shakshuka With Feta</h4>
+                                                <div class="line"><img src="imgs/letter-l.gif"></div>
+                                                <h4 class="prise font1 color1 mb-0">$75.50</h4>
+                                            </div>
+                                            <div class="down">
+                                                <p class="m-0 font2">Lorem ipsum dolor, sit amet consectetur adipisicingelit. Nihil, incidunt.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="meal5 meal">
+                                        <div class="mealImg">
+                                            <div class="shape"><i class="fa-solid fa-compress"onclick="openPopUp('pop-up-menu');stopClose('pop-up-menu-box')"></i></div>
+                                            <img src="imgs/BF-5.webp">
+                                        </div>
+                                        <div class="mealText">
+                                            <div class="upper">
+                                                <h4 class="font1 color1 mb-0">Avocado Toast</h4>
+                                                <div class="line"><img src="imgs/letter-l.gif"></div>
+                                                <h4 class="prise font1 color1 mb-0">$45.50</h4>
+                                            </div>
+                                            <div class="down">
+                                                <p class="m-0 font2">Lorem ipsum dolor, sit amet consectetur adipisicingelit. Nihil, incidunt.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="meal6 meal">
+                                        <div class="mealImg">
+                                            <div class="shape"><i class="fa-solid fa-compress"onclick="openPopUp('pop-up-menu');stopClose('pop-up-menu-box')"></i></div>
+                                            <img src="imgs/BF-6.webp">
+                                        </div>
+                                        <div class="mealText">
+                                            <div class="upper">
+                                                <h4 class="font1 color1 mb-0">Scallion Egg Wrap</h4>
+                                                <div class="line"><img src="imgs/letter-l.gif"></div>
+                                                <h4 class="prise font1 color1 mb-0">$35.50</h4>
+                                            </div>
+                                            <div class="down">
+                                                <p class="m-0 font2">Lorem ipsum dolor, sit amet consectetur adipisicingelit. Nihil, incidunt.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                            
+                    </div>
+                    <div class="tab-pane fade text-white w-100" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="1">
+                        <div class="row w-100 ">
+                            <div class="col-md-6 col1 column">
+                                <div class="item">
+                                    <div class="meal1 meal">
+                                        <div class="mealImg">
+                                            <div class="shape"><i class="fa-solid fa-compress"onclick="openPopUp('pop-up-menu2');stopClose('pop-up-menu-box2')"></i></div>
+                                            <img src="imgs/L-1.png">
+                                        </div>
+                                        <div class="mealText">
+                                            <div class="upper">
+                                                <h4 class="font1 color1 mb-0">Bean Quesadillas</h4>
+                                                <div class="line"><img src="imgs/letter-l.gif"></div>
+                                                <h4 class="prise font1 color1 mb-0">$55.50</h4>
+                                            </div>
+                                            <div class="down">
+                                                <p class="m-0 font2">Lorem ipsum dolor, sit amet consectetur adipisicingelit. Nihil, incidunt.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="meal2 meal">
+                                        <div class="mealImg">
+                                            <div class="shape"><i class="fa-solid fa-compress"onclick="openPopUp('pop-up-menu2');stopClose('pop-up-menu-box2')"></i></div>
+                                            <img src="imgs/L-2.png">
+                                        </div>
+                                        <div class="mealText">
+                                            <div class="upper">
+                                                <h4 class="font1 color1 mb-0">Creamy Mushroom</h4>
+                                                <div class="line"><img src="imgs/letter-l.gif"></div>
+                                                <h4 class="prise font1 color1 mb-0">$38.50</h4>
+                                            </div>
+                                            <div class="down">
+                                                <p class="m-0 font2">Lorem ipsum dolor, sit amet consectetur adipisicingelit. Nihil, incidunt.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="meal3 meal">
+                                        <div class="mealImg">
+                                            <div class="shape"><i class="fa-solid fa-compress"onclick="openPopUp('pop-up-menu2');stopClose('pop-up-menu-box2')"></i></div>
+                                            <img src="imgs/L-3.png">
+                                        </div>
+                                        <div class="mealText">
+                                            <div class="upper">
+                                                <h4 class="font1 color1 mb-0">Noodle Salad</h4>
+                                                <div class="line"><img src="imgs/letter-l.gif"></div>
+                                                <h4 class="prise font1 color1 mb-0">$20.50</h4>
+                                            </div>
+                                            <div class="down">
+                                                <p class="m-0 font2">Lorem ipsum dolor, sit amet consectetur adipisicingelit. Nihil, incidunt.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col2 column">
+                                <div class="item">
+                                    <div class="meal4 meal">
+                                        <div class="mealImg">
+                                            <div class="shape"><i class="fa-solid fa-compress"onclick="openPopUp('pop-up-menu2');stopClose('pop-up-menu-box2')"></i></div>
+                                            <img src="imgs/L-4.png">
+                                        </div>
+                                        <div class="mealText">
+                                            <div class="upper">
+                                                <h4 class="font1 color1 mb-0">Feta Grilled Cheese</h4>
+                                                <div class="line"><img src="imgs/letter-l.gif"></div>
+                                                <h4 class="prise font1 color1 mb-0">$75.50</h4>
+                                            </div>
+                                            <div class="down">
+                                                <p class="m-0 font2">Lorem ipsum dolor, sit amet consectetur adipisicingelit. Nihil, incidunt.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="meal5 meal">
+                                        <div class="mealImg">
+                                            <div class="shape"><i class="fa-solid fa-compress"onclick="openPopUp('pop-up-menu2');stopClose('pop-up-menu-box2')"></i></div>
+                                            <img src="imgs/L-5.png">
+                                        </div>
+                                        <div class="mealText">
+                                            <div class="upper">
+                                                <h4 class="font1 color1 mb-0">Chicken Pasta</h4>
+                                                <div class="line"><img src="imgs/letter-l.gif"></div>
+                                                <h4 class="prise font1 color1 mb-0">$85.50</h4>
+                                            </div>
+                                            <div class="down">
+                                                <p class="m-0 font2">Lorem ipsum dolor, sit amet consectetur adipisicingelit. Nihil, incidunt.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="meal6 meal">
+                                        <div class="mealImg">
+                                            <div class="shape"><i class="fa-solid fa-compress"onclick="openPopUp('pop-up-menu2');stopClose('pop-up-menu-box2')"></i></div>
+                                            <img src="imgs/L-6.png">
+                                        </div>
+                                        <div class="mealText">
+                                            <div class="upper">
+                                                <h4 class="font1 color1 mb-0">Sausage Pasta</h4>
+                                                <div class="line"><img src="imgs/letter-l.gif"></div>
+                                                <h4 class="prise font1 color1 mb-0">$35.50</h4>
+                                            </div>
+                                            <div class="down">
+                                                <p class="m-0 font2">Lorem ipsum dolor, sit amet consectetur adipisicingelit. Nihil, incidunt.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade text-white w-100" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="2">
+                        <div class="row w-100 ">
+                            <div class="col-md-6 col1 column">
+                                <div class="item">
+                                    <div class="meal1 meal">
+                                        <div class="mealImg">
+                                            <div class="shape"><i class="fa-solid fa-compress"onclick="openPopUp('pop-up-menu3');stopClose('pop-up-menu-box3')"></i></div>
+                                            <img src="imgs/Di-1.webp">
+                                        </div>
+                                        <div class="mealText">
+                                            <div class="upper">
+                                                <h4 class="font1 color1 mb-0">Creamy Beans</h4>
+                                                <div class="line"><img src="imgs/letter-l.gif"></div>
+                                                <h4 class="prise font1 color1 mb-0">$35.50</h4>
+                                            </div>
+                                            <div class="down">
+                                                <p class="m-0 font2">Lorem ipsum dolor, sit amet consectetur adipisicingelit. Nihil, incidunt.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="meal2 meal">
+                                        <div class="mealImg">
+                                            <div class="shape"><i class="fa-solid fa-compress"onclick="openPopUp('pop-up-menu3');stopClose('pop-up-menu-box3')"></i></div>
+                                            <img src="imgs/Di-2.webp">
+                                        </div>
+                                        <div class="mealText">
+                                            <div class="upper">
+                                                <h4 class="font1 color1 mb-0">Classic Shrimp</h4>
+                                                <div class="line"><img src="imgs/letter-l.gif"></div>
+                                                <h4 class="prise font1 color1 mb-0">$38.50</h4>
+                                            </div>
+                                            <div class="down">
+                                                <p class="m-0 font2">Lorem ipsum dolor, sit amet consectetur adipisicingelit. Nihil, incidunt.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="meal3 meal">
+                                        <div class="mealImg">
+                                            <div class="shape"><i class="fa-solid fa-compress"onclick="openPopUp('pop-up-menu3');stopClose('pop-up-menu-box3')"></i></div>
+                                            <img src="imgs/Di-3.webp">
+                                        </div>
+                                        <div class="mealText">
+                                            <div class="upper">
+                                                <h4 class="font1 color1 mb-0">Kung Pao Chicken</h4>
+                                                <div class="line"><img src="imgs/letter-l.gif"></div>
+                                                <h4 class="prise font1 color1 mb-0">$20.50</h4>
+                                            </div>
+                                            <div class="down">
+                                                <p class="m-0 font2">Lorem ipsum dolor, sit amet consectetur adipisicingelit. Nihil, incidunt.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col2 column">
+                                <div class="item">
+                                    <div class="meal4 meal">
+                                        <div class="mealImg">
+                                            <div class="shape"><i class="fa-solid fa-compress"onclick="openPopUp('pop-up-menu3');stopClose('pop-up-menu-box3')"></i></div>
+                                            <img src="imgs/Di-4.webp">
+                                        </div>
+                                        <div class="mealText">
+                                            <div class="upper">
+                                                <h4 class="font1 color1 mb-0">Elena Sandwich</h4>
+                                                <div class="line"><img src="imgs/letter-l.gif"></div>
+                                                <h4 class="prise font1 color1 mb-0">$75.50</h4>
+                                            </div>
+                                            <div class="down">
+                                                <p class="m-0 font2">Lorem ipsum dolor, sit amet consectetur adipisicingelit. Nihil, incidunt.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="meal5 meal">
+                                        <div class="mealImg">
+                                            <div class="shape"><i class="fa-solid fa-compress"onclick="openPopUp('pop-up-menu3');stopClose('pop-up-menu-box3')"></i></div>
+                                            <img src="imgs/Di-5.webp">
+                                        </div>
+                                        <div class="mealText">
+                                            <div class="upper">
+                                                <h4 class="font1 color1 mb-0">Turmeric Chicken</h4>
+                                                <div class="line"><img src="imgs/letter-l.gif"></div>
+                                                <h4 class="prise font1 color1 mb-0">$150.50</h4>
+                                            </div>
+                                            <div class="down">
+                                                <p class="m-0 font2">Lorem ipsum dolor, sit amet consectetur adipisicingelit. Nihil, incidunt.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="meal6 meal">
+                                        <div class="mealImg">
+                                            <div class="shape"><i class="fa-solid fa-compress"onclick="openPopUp('pop-up-menu3');stopClose('pop-up-menu-box3')"></i></div>
+                                            <img src="imgs/Di-6.webp">
+                                        </div>
+                                        <div class="mealText">
+                                            <div class="upper">
+                                                <h4 class="font1 color1 mb-0">Scallion Egg Wrap</h4>
+                                                <div class="line"><img src="imgs/letter-l.gif"></div>
+                                                <h4 class="prise font1 color1 mb-0">$35.50</h4>
+                                            </div>
+                                            <div class="down">
+                                                <p class="m-0 font2">Lorem ipsum dolor, sit amet consectetur adipisicingelit. Nihil, incidunt.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade text-white w-100" id="pills-drinks" role="tabpanel" aria-labelledby="pills-drinks-tab" tabindex="3">
+                        <div class="row w-100 ">
+                            <div class="col-md-6 col1 column">
+                                <div class="item">
+                                    <div class="meal1 meal">
+                                        <div class="mealImg">
+                                            <div class="shape"><i class="fa-solid fa-compress"onclick="openPopUp('pop-up-menu4');stopClose('pop-up-menu-box4')"></i></div>
+                                            <img src="imgs/Dr-1.webp">
+                                        </div>
+                                        <div class="mealText">
+                                            <div class="upper">
+                                                <h4 class="font1 color1 mb-0">Blueberry Lemonade</h4>
+                                                <div class="line"><img src="imgs/letter-l.gif"></div>
+                                                <h4 class="prise font1 color1 mb-0">$35.50</h4>
+                                            </div>
+                                            <div class="down">
+                                                <p class="m-0 font2">Lorem ipsum dolor, sit amet consectetur adipisicingelit. Nihil, incidunt.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="meal2 meal">
+                                        <div class="mealImg">
+                                            <div class="shape"><i class="fa-solid fa-compress"onclick="openPopUp('pop-up-menu4');stopClose('pop-up-menu-box4')"></i></div>
+                                            <img src="imgs/Dr-2.webp">
+                                        </div>
+                                        <div class="mealText">
+                                            <div class="upper">
+                                                <h4 class="font1 color1 mb-0">Frozen Lemonade</h4>
+                                                <div class="line"><img src="imgs/letter-l.gif"></div>
+                                                <h4 class="prise font1 color1 mb-0">$38.50</h4>
+                                            </div>
+                                            <div class="down">
+                                                <p class="m-0 font2">Lorem ipsum dolor, sit amet consectetur adipisicingelit. Nihil, incidunt.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="meal3 meal">
+                                        <div class="mealImg">
+                                            <div class="shape"><i class="fa-solid fa-compress"onclick="openPopUp('pop-up-menu4');stopClose('pop-up-menu-box4')"></i></div>
+                                            <img src="imgs/Dr-3.webp">
+                                        </div>
+                                        <div class="mealText">
+                                            <div class="upper">
+                                                <h4 class="font1 color1 mb-0">Raspberry Lemonade</h4>
+                                                <div class="line"><img src="imgs/letter-l.gif"></div>
+                                                <h4 class="prise font1 color1 mb-0">$20.50</h4>
+                                            </div>
+                                            <div class="down">
+                                                <p class="m-0 font2">Lorem ipsum dolor, sit amet consectetur adipisicingelit. Nihil, incidunt.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col2 column">
+                                <div class="item">
+                                    <div class="meal4 meal">
+                                        <div class="mealImg">
+                                            <div class="shape"><i class="fa-solid fa-compress"onclick="openPopUp('pop-up-menu4');stopClose('pop-up-menu-box4')"></i></div>
+                                            <img src="imgs/Dr-4.webp">
+                                        </div>
+                                        <div class="mealText">
+                                            <div class="upper">
+                                                <h4 class="font1 color1 mb-0">Raspberry Lemonade</h4>
+                                                <div class="line"><img src="imgs/letter-l.gif"></div>
+                                                <h4 class="prise font1 color1 mb-0">$75.50</h4>
+                                            </div>
+                                            <div class="down">
+                                                <p class="m-0 font2">Lorem ipsum dolor, sit amet consectetur adipisicingelit. Nihil, incidunt.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="meal5 meal">
+                                        <div class="mealImg">
+                                            <div class="shape"><i class="fa-solid fa-compress"onclick="openPopUp('pop-up-menu4');stopClose('pop-up-menu-box4')"></i></div>
+                                            <img src="imgs/Dr-5.webp">
+                                        </div>
+                                        <div class="mealText">
+                                            <div class="upper">
+                                                <h4 class="font1 color1 mb-0">Honeydew Melon</h4>
+                                                <div class="line"><img src="imgs/letter-l.gif"></div>
+                                                <h4 class="prise font1 color1 mb-0">$45.50</h4>
+                                            </div>
+                                            <div class="down">
+                                                <p class="m-0 font2">Lorem ipsum dolor, sit amet consectetur adipisicingelit. Nihil, incidunt.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="meal6 meal">
+                                        <div class="mealImg">
+                                            <div class="shape"><i class="fa-solid fa-compress"onclick="openPopUp('pop-up-menu4');stopClose('pop-up-menu-box4')"></i></div>
+                                            <img src="imgs/Dr-6.webp">
+                                        </div>
+                                        <div class="mealText">
+                                            <div class="upper">
+                                                <h4 class="font1 color1 mb-0">Changing Lemonade</h4>
+                                                <div class="line"><img src="imgs/letter-l.gif"></div>
+                                                <h4 class="prise font1 color1 mb-0">$35.50</h4>
+                                            </div>
+                                            <div class="down">
+                                                <p class="m-0 font2">Lorem ipsum dolor, sit amet consectetur adipisicingelit. Nihil, incidunt.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Chef" class="chef bgImg py-5">
+        <div class="container">
+            <img class="imgBg imgBg1" src="imgs/pattern-9.svg">
+            <img class="imgBg imgBg2" src="imgs/pattern-9.svg">
+            <div class="title iconed w-100 text-center">
+                <div class="titleCover">
+                    <img src="imgs/chef.gif" class="mt-2">
+                    <h5 class="font1 color1 mt-3">EXPERIENCED TEAM</h5>
+                </div>
+                <img class="separator" src="imgs/separator.svg">
+            </div>
+            <div class="row chefText text-center text-white mt-3 p-0">
+                <h2 class="font1">Meet Our Chef</h2>
+                <p class="font2 w-50 m-auto">Lorem Ipsum is simply dummy text of the printing and<br> typesetting industry
+                    lorem Ipsum has been the industrys<br> standard
+                    dummy text ever.</p>
+            </div>
+            <div class="row chefImgs mt-3">
+                <div class="col-lg-4 col1 column">
+                    <div class="item item1">
+                        <div class="head">
+                            <div class="shape"></div>
+                            <img src="imgs/pattern-8.svg" class="img1">
+                            <div class="chefInfo">
+                                <div class="chefMedia">
+                                    <ul>
+                                        <li class="medai medai1">
+                                            <a href="#"><i class="fa-brands fa-facebook-f icon1"></i></a>
+                                        </li>
+                                        <li class="medai medai2">
+                                            <a href="#"><i class="fa-brands fa-instagram icon2"></i></a>
+                                        </li>
+                                        <li class="medai medai3">
+                                            <a href="#"><i class="fa-brands fa-x-twitter icon3"></i></a>
+                                        </li>
+                                        <li class="medai medai4">
+                                            <a href="#"><i class="fa-brands fa-linkedin-in icon4"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <img src="imgs/chef-1.jpg" class="img2">
+                            </div>
+                        </div>
+                        <div class="body text-center mt-3">
+                            <h3 class="font1 text-white">Willium Joe</h3>
+                            <a href="#Menu" class="anchorShaped font2">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col2 column">
+                    <div class="item item1">
+                        <div class="head">
+                            <div class="shape"></div>
+                            <img src="imgs/pattern-8.svg" class="img1">
+                            <div class="chefInfo">
+                                <div class="chefMedia">
+                                    <ul>
+                                        <li class="medai medai1">
+                                            <a href="#"><i class="fa-brands fa-facebook-f icon1"></i></a>
+                                        </li>
+                                        <li class="medai medai2">
+                                            <a href="#"><i class="fa-brands fa-instagram icon2"></i></a>
+                                        </li>
+                                        <li class="medai medai3">
+                                            <a href="#"><i class="fa-brands fa-x-twitter icon3"></i></a>
+                                        </li>
+                                        <li class="medai medai4">
+                                            <a href="#"><i class="fa-brands fa-linkedin-in icon4"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <img src="imgs/chef-2.jpg" class="img2">
+                            </div>
+                        </div>
+                        <div class="body text-center mt-3">
+                            <h3 class="font1 text-white">Steave Den</h3>
+                            <a href="#Menu" class="anchorShaped font2">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col3 column">
+                    <div class="item item1">
+                        <div class="head">
+                            <div class="shape"></div>
+                            <img src="imgs/pattern-8.svg" class="img1">
+                            <div class="chefInfo">
+                                <div class="chefMedia">
+                                    <ul>
+                                        <li class="medai medai1">
+                                            <a href="#"><i class="fa-brands fa-facebook-f icon1"></i></a>
+                                        </li>
+                                        <li class="medai medai2">
+                                            <a href="#"><i class="fa-brands fa-instagram icon2"></i></a>
+                                        </li>
+                                        <li class="medai medai3">
+                                            <a href="#"><i class="fa-brands fa-x-twitter icon3"></i></a>
+                                        </li>
+                                        <li class="medai medai4">
+                                            <a href="#"><i class="fa-brands fa-linkedin-in icon4"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <img src="imgs/chef-3.jpg" class="img2">
+                            </div>
+                        </div>
+                        <div class="body text-center mt-3">
+                            <h3 class="font1 text-white">Lily Sopy</h3>
+                            <a href="#Menu" class="anchorShaped font2">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Book" class="book bgImg py-5">
+        <div class="box bgImg">
+            <img class="imgBg imgBg1" src="imgs/pattern-9.svg">
+            <img class="imgBg imgBg2" src="imgs/pattern-9.svg">
+            <div class="container">
+                <div class="logo mt-4">
+                    <img src="imgs/logo.png">
+                </div>
+                <div class="vistdetail w-100 text-center mt-4">
+                    <div class="detail location">
+                        <img src="imgs/distance.gif">
+                        <p class="m-0 font2">Delicious City, London 9578, UK</p>
+                    </div>
+                    <div class="detail location">
+                        <img src="imgs/speedometer.gif">
+                        <p class="m-0 font2">Daily : 8.00 am to 10.00 pm</p>
+                    </div>
+                    <div class="detail time">
+                        <img src="imgs/sending-mail.gif">
+                        <p class="m-0 font2">booking.@.restaurant</p>
+                    </div>
+                </div>
+                <div class="shapes mt-4">
+                    <img src="imgs/hologram.gif">
+                    <img src="imgs/hologram.gif">
+                    <img src="imgs/hologram.gif">
+                </div>
+                <div class="formMajor w-100 mt-4">
+                    <form action="" method="post" class="w-100">
+                        <div class="w-100 first">
+                            <div class="namCon con w-100">
+                                <input type="text" placeholder="Name..." required class="w-100">
+                            </div>
+                            <div class="MailCon w-100 con">
+                                <input type="email" placeholder="Email..." required class="w-100">
+                            </div>
+                        </div>
+                        <div class="textAreaCon w-100 mt-4">
+                            <textarea name="message" placeholder="Message..." rows="5" class="w-100" required=""></textarea>
+                        </div>
+                        <div class="btnCon w-100 mt-4">
+                            <button class="btn buttonShaped shaped">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bgImg overflow-hidden">
+        <p class="m-0 font2">© 2025 Restaurant. All Rights Reserved SemiCode | Created by <a href="https://www.linkedin.com/in/abdelrhman-aboelfadl-qassim-206927386/" >Abdo Fadl</a></p>
+    </footer>
+    <div class="pop-up pop-up-nav navBar" onclick="closePopUp('pop-up-nav')">
+        <div class="pop-up-box pop-up-nav-box bgImg">
+            <div class="container-box container-nav w-75 m-auto">
+                <div class="exit" onclick="closePopUp('pop-up')">
+                    <button><img src="imgs/logout.gif"></button>
+                </div>
+                <div class="logo mt-4">
+                    <img src="imgs/logo.png">
+                </div>
+                <div class="imgLogo mt-4">
+                    <div class="imgCover">
+                        <img src="imgs/sidebar-image.jpg">
+                    </div>
+                </div>
+                <div class="nav-links w-100 mt-4">
+                    <ul class="p-0 m-0">
+                        <li class="active"><img src="imgs/menu.gif"><a href="#Header">Home</a></li>
+                        <li><img src="imgs/menu.gif"><a href="#About">About us</a></li>
+                        <li><img src="imgs/menu.gif"><a href="#Story">Our Story</a></li>
+                        <li><img src="imgs/menu.gif"><a href="#special">Special Dish</a></li>
+                        <li><img src="imgs/menu.gif"><a href="#Menu">Menu</a></li>
+                        <li><img src="imgs/menu.gif"><a href="#Chef">Our Chefs</a></li>
+                        <li><img src="imgs/menu.gif"><a href="#Book">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="vistTitle w-100 mt-4 text-center">
+                    <h2 class="font1 text-light">Visit Us</h2>
+                </div>
+                <div class="vistdetail w-100 text-center">
+                    <div class="detail location">
+                        <img src="imgs/distance.gif">
+                        <p class="m-0 font2">Delicious City, London 9578, UK</p>
+                    </div>
+                    <div class="detail location">
+                        <img src="imgs/speedometer.gif">
+                        <p class="m-0 font2">Daily : 8.00 am to 10.00 pm</p>
+                    </div>
+                    <div class="detail time">
+                        <img src="imgs/sending-mail.gif">
+                        <p class="m-0 font2">booking.@.restaurant.com</p>
+                    </div>
+                </div>
+                <div class="shapes mt-3">
+                    <img src="imgs/hologram.gif">
+                    <img src="imgs/hologram.gif">
+                    <img src="imgs/hologram.gif">
+                    <img src="imgs/hologram.gif">
+                </div>
+                <div class="book mt-4">
+                    <p class="font2 m-0">Booking Request</p>
+                </div>
+                <div class="bookPhone mt-3">
+                    <a href="tel:+20-102-108-0042" class="phone font2 anchorShaped">
+                        +20-102-108-0042
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-up pop-up-book" onclick="closePopUp('pop-up-book')">
+        <div class=" pop-up-book-box bgImg">
+            <div class="exit" onclick="closePopUp('pop-up-book')">
+                <button><img src="imgs/logout.gif"></button>
+            </div>
+            <div class="title iconed w-100 text-center">
+                <div class="titleCover">
+                    <img src="imgs/calendar.gif">
+                    <h5 class="font1 color1 ">RESERVATION</h5>
+                </div>
+                <img class="separator" src="imgs/separator.svg">
+            </div>
+            <div class="headTitle text-white text-center w-100">
+                <h2 class="font1 m-0">Book A Table</h2>
+            </div>
+            <div class="vistdetail w-100 text-center mt-4">
+                <div class="detail location">
+                    <img src="imgs/distance.gif">
+                    <p class="m-0 font2">Delicious City, London 9578, UK</p>
+                </div>
+                <div class="detail location">
+                    <img src="imgs/speedometer.gif">
+                    <p class="m-0 font2">Daily : 8.00 am to 10.00 pm</p>
+                </div>
+                <div class="detail time">
+                    <img src="imgs/sending-mail.gif">
+                    <p class="m-0 font2">booking.@.restaurant</p>
+                </div>
+            </div>
+            <div class="PhoneNum text-center mt-2">
+                <p class="font2 m-0">Booking request <a href="tel:+20-102-108-0042" class="phone font2 anchorShaped">
+                    +20-102-108-0042</a> or fill out the order form
+                </p>
+                
+            </div>
+            <div class="formMajor w-100 mt-4">
+                <form action="" method="post" class="w-100">
+                    <div class="w-100 first arrow">
+                        <div class="namCon con w-100">
+                            <input type="text" placeholder="Reservation Name ..." required class="w-100">
+                        </div>
+                        <div class="phoneCon w-100 con">
+                            <input type="text" placeholder="Phone Number..." required class="w-100">
+                        </div>
+                    </div>
+                    <div class="w-100 secound arrow mt-4">
+                        <div class="numCon con w-100">
+                            <input type="number" min="1" placeholder="Seats..." required class="w-100">
+                        </div>
+                        <div class="dateCon w-100 con">
+                            <input type="datetime-local" placeholder="mm/dd/yy --:--:--" required class="w-100">
+                        </div>
+                    </div>
+                    <div class="textAreaCon w-100 mt-4">
+                        <textarea name="message" placeholder="Notes Message..." rows="5" class="w-100" required=""></textarea>
+                    </div>
+                    <div class="btnCon w-100 mt-4">
+                        <button class="btn buttonShaped shaped">Book A Table</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="pop-up pop-up-menu" onclick="closePopUp('pop-up-menu')">
+        <div class="pop-up-box pop-up-menu-box bgImg">
+            <div class="exit" onclick="closePopUp('pop-up-menu')">
+                <button><img src="imgs/logout.gif"></button>
+            </div>
+            <div class="title iconed w-100 text-center">
+                <div class="titleCover">
+                    <img src="imgs/recipe-book.gif">
+                    <h5 class="font1 color1">SPECIAL SELECTION</h5>
+                </div>
+                <img class="separator" src="imgs/separator.svg">
+            </div>
+            <div class="head">
+                <div class="coverCarosal">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="headTitle bgImg w-100">
+                                    <h2 class="font1 color1 text-center">Everyday Pancakes</h2>
+                                </div>
+                                <img src="imgs/BF-1.webp">
+                            </div>
+                            <div class="carousel-item">
+                                <div class="headTitle bgImg w-100">
+                                    <h2 class="font1 color1 text-center">Everyday Pancakes</h2>
+                                </div>
+                                <img src="imgs/BF-2.webp">
+                            </div>
+                            <div class="carousel-item">
+                                <div class="headTitle bgImg w-100">
+                                    <h2 class="font1 color1 text-center">Waffles</h2>
+                                </div>
+                                <img src="imgs/BF-3.webp">
+                            </div>
+                            <div class="carousel-item">
+                                <div class="headTitle bgImg w-100">
+                                    <h2 class="font1 color1 text-center">French Toast</h2>
+                                </div>
+                                <img src="imgs/BF-4.webp">
+                            </div>
+                            <div class="carousel-item">
+                                <div class="headTitle bgImg w-100">
+                                    <h2 class="font1 color1 text-center">Shakshuka With Feta</h2>
+                                </div>
+                                <img src="imgs/BF-5.webp">
+                            </div>
+                            <div class="carousel-item">
+                                <div class="headTitle bgImg w-100">
+                                    <h2 class="font1 color1 text-center">Avocado Toast</h2>
+                                </div>
+                                <img src="imgs/BF-6.webp">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev control iconControll" type="button"
+                            data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                            <i class="fa-solid fa-angle-left iconControll"></i>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next control iconControll" type="button"
+                            data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                            <i class="fa-solid fa-angle-right color1 iconControll"></i>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="tail mt-3">
+                <p class="m-0 font2 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, reiciendis numquam
+                    magnam dolore ratione tenetur eos rem
+                    modi voluptates obcaecati quidem voluptate mollitia sunt aspernatur odit porro possimus ducimus,
+                    explicabo quaerat,
+                    pariatur illo praesentium non delectus inventore? Molestias porro delectus laborum perferendis ratione
+                    maxime, impedit
+                    veniam minus dolor, magnam a.</p>
+            </div>
+        </div>
+    </div>
+    <div class="pop-up pop-up-menu pop-up-menu2" onclick="closePopUp('pop-up-menu2')">
+        <div class="pop-up-box pop-up-menu-box pop-up-menu-box2 bgImg">
+            <div class="exit" onclick="closePopUp('pop-up-menu2')">
+                <button><img src="imgs/logout.gif"></button>
+            </div>
+            <div class="title iconed w-100 text-center">
+                <div class="titleCover">
+                    <img src="imgs/recipe-book.gif">
+                    <h5 class="font1 color1">SPECIAL SELECTION</h5>
+                </div>
+                <img class="separator" src="imgs/separator.svg">
+            </div>
+            <div class="head">
+                <div class="coverCarosal">
+                    <div id="carouselExampleFade2" class="carousel slide carousel-fade">
+                        <div class="carousel-inner carousel-inner2">
+                            <div class="carousel-item item1 active">
+                                <div class="headTitle bgImg w-100">
+                                    <h2 class="font1 color1 text-center">Bean Quesadillas</h2>
+                                </div>
+    
+                            </div>
+                            <div class="carousel-item item2">
+                                <div class="headTitle bgImg w-100">
+                                    <h2 class="font1 color1 text-center">Creamy Mushroom</h2>
+                                </div>
+    
+                            </div>
+                            <div class="carousel-item item3">
+                                <div class="headTitle bgImg w-100">
+                                    <h2 class="font1 color1 text-center">Noodle Salad</h2>
+                                </div>
+    
+                            </div>
+                            <div class="carousel-item item4">
+                                <div class="headTitle bgImg w-100">
+                                    <h2 class="font1 color1 text-center">Feta Grilled Cheese</h2>
+                                </div>
+    
+                            </div>
+                            <div class="carousel-item item5">
+                                <div class="headTitle bgImg w-100">
+                                    <h2 class="font1 color1 text-center">Shakshuka With Feta</h2>
+                                </div>
+    
+                            </div>
+                            <div class="carousel-item item6">
+                                <div class="headTitle bgImg w-100">
+                                    <h2 class="font1 color1 text-center">Avocado Toast</h2>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev control iconControll" type="button"
+                            data-bs-target="#carouselExampleFade2" data-bs-slide="prev">
+                            <i class="fa-solid fa-angle-left iconControll"></i>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next control iconControll" type="button"
+                            data-bs-target="#carouselExampleFade2" data-bs-slide="next">
+                            <i class="fa-solid fa-angle-right color1 iconControll"></i>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="tail mt-3">
+                <p class="m-0 font2 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, reiciendis numquam
+                    magnam dolore ratione tenetur eos rem
+                    modi voluptates obcaecati quidem voluptate mollitia sunt aspernatur odit porro possimus ducimus,
+                    explicabo quaerat,
+                    pariatur illo praesentium non delectus inventore? Molestias porro delectus laborum perferendis ratione
+                    maxime, impedit
+                    veniam minus dolor, magnam a.</p>
+            </div>
+        </div>
+    </div>
+    <div class="pop-up pop-up-menu pop-up-menu3" onclick="closePopUp('pop-up-menu3')">
+        <div class="pop-up-box pop-up-menu-box pop-up-menu-box3 bgImg">
+            <div class="exit" onclick="closePopUp('pop-up-menu3')">
+                <button><img src="imgs/logout.gif"></button>
+            </div>
+            <div class="title iconed w-100 text-center">
+                <div class="titleCover">
+                    <img src="imgs/recipe-book.gif">
+                    <h5 class="font1 color1">SPECIAL SELECTION</h5>
+                </div>
+                <img class="separator" src="imgs/separator.svg">
+            </div>
+            <div class="head">
+                <div class="coverCarosal">
+                    <div id="carouselExampleFade3" class="carousel slide carousel-fade">
+                        <div class="carousel-inner carousel-inner3">
+                            <div class="carousel-item item1 active">
+                                <div class="headTitle bgImg w-100">
+                                    <h2 class="font1 color1 text-center">Creamy Beans</h2>
+                                </div>
+    
+                            </div>
+                            <div class="carousel-item item2">
+                                <div class="headTitle bgImg w-100">
+                                    <h2 class="font1 color1 text-center">Classic Shrimp</h2>
+                                </div>
+    
+                            </div>
+                            <div class="carousel-item item3">
+                                <div class="headTitle bgImg w-100">
+                                    <h2 class="font1 color1 text-center">Kung Pao Chicken</h2>
+                                </div>
+    
+                            </div>
+                            <div class="carousel-item item4">
+                                <div class="headTitle bgImg w-100">
+                                    <h2 class="font1 color1 text-center">Elena Sandwich</h2>
+                                </div>
+    
+                            </div>
+                            <div class="carousel-item item5">
+                                <div class="headTitle bgImg w-100">
+                                    <h2 class="font1 color1 text-center">Turmeric Chicken</h2>
+                                </div>
+    
+                            </div>
+                            <div class="carousel-item item6">
+                                <div class="headTitle bgImg w-100">
+                                    <h2 class="font1 color1 text-center">Original Nachos</h2>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev control iconControll" type="button"
+                            data-bs-target="#carouselExampleFade3" data-bs-slide="prev">
+                            <i class="fa-solid fa-angle-left iconControll"></i>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next control iconControll" type="button"
+                            data-bs-target="#carouselExampleFade3" data-bs-slide="next">
+                            <i class="fa-solid fa-angle-right color1 iconControll"></i>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="tail mt-3">
+                <p class="m-0 font2 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, reiciendis numquam
+                    magnam dolore ratione tenetur eos rem
+                    modi voluptates obcaecati quidem voluptate mollitia sunt aspernatur odit porro possimus ducimus,
+                    explicabo quaerat,
+                    pariatur illo praesentium non delectus inventore? Molestias porro delectus laborum perferendis ratione
+                    maxime, impedit
+                    veniam minus dolor, magnam a.</p>
+            </div>
+        </div>
+    </div>
+    <div class="pop-up pop-up-menu pop-up-menu4" onclick="closePopUp('pop-up-menu4')">
+        <div class="pop-up-box pop-up-menu-box pop-up-menu-box4 bgImg">
+            <div class="exit" onclick="closePopUp('pop-up-menu4')">
+                <button><img src="imgs/logout.gif"></button>
+            </div>
+            <div class="title iconed w-100 text-center">
+                <div class="titleCover">
+                    <img src="imgs/recipe-book.gif">
+                    <h5 class="font1 color1">SPECIAL SELECTION</h5>
+                </div>
+                <img class="separator" src="imgs/separator.svg">
+            </div>
+            <div class="head">
+                <div class="coverCarosal">
+                    <div id="carouselExampleFade4" class="carousel slide carousel-fade">
+                        <div class="carousel-inner carousel-inner4">
+                            <div class="carousel-item item1 active">
+                                <div class="headTitle bgImg w-100">
+                                    <h2 class="font1 color1 text-center">Blueberry Lemonade</h2>
+                                </div>
+    
+                            </div>
+                            <div class="carousel-item item2">
+                                <div class="headTitle bgImg w-100">
+                                    <h2 class="font1 color1 text-center">Frozen Lemonade</h2>
+                                </div>
+    
+                            </div>
+                            <div class="carousel-item item3">
+                                <div class="headTitle bgImg w-100">
+                                    <h2 class="font1 color1 text-center">Raspberry Lemonade</h2>
+                                </div>
+    
+                            </div>
+                            <div class="carousel-item item4">
+                                <div class="headTitle bgImg w-100">
+                                    <h2 class="font1 color1 text-center">Raspberry Lemonade</h2>
+                                </div>
+    
+                            </div>
+                            <div class="carousel-item item5">
+                                <div class="headTitle bgImg w-100">
+                                    <h2 class="font1 color1 text-center">Honeydew Melon</h2>
+                                </div>
+    
+                            </div>
+                            <div class="carousel-item item6">
+                                <div class="headTitle bgImg w-100">
+                                    <h2 class="font1 color1 text-center">Changing Lemonade</h2>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev control iconControll" type="button"
+                            data-bs-target="#carouselExampleFade4" data-bs-slide="prev">
+                            <i class="fa-solid fa-angle-left iconControll"></i>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next control iconControll" type="button"
+                            data-bs-target="#carouselExampleFade4" data-bs-slide="next">
+                            <i class="fa-solid fa-angle-right color1 iconControll"></i>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="tail mt-3">
+                <p class="m-0 font2 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, reiciendis numquam
+                    magnam dolore ratione tenetur eos rem
+                    modi voluptates obcaecati quidem voluptate mollitia sunt aspernatur odit porro possimus ducimus,
+                    explicabo quaerat,
+                    pariatur illo praesentium non delectus inventore? Molestias porro delectus laborum perferendis ratione
+                    maxime, impedit
+                    veniam minus dolor, magnam a.</p>
+            </div>
+        </div>
+    </div>
+    <div id="Loading" class="loading bgImg">
+        <div class="cudeLoading">
+            <div class="loadinBorder"></div>
+            <div class="loadingImg">
+                <img src="imgs/restaurant.gif">
+            </div>
+        </div>
+        <div class="text">
+            <span class="show">
+                <span class="me-3">D</span>
+                <span class="me-3">E</span>
+                <span class="me-3">L</span>
+                <span class="me-3">I</span>
+                <span class="me-3">C</span>
+                <span class="me-3">I</span>
+            </span>
+            <span class="dance">
+                <span class="me-3">D</span>
+                <span class="me-3">E</span>
+                <span class="me-3">L</span>
+                <span class="me-3">I</span>
+                <span class="me-3">C</span>
+                <span class="me-3">I</span>
+            </span>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/lenis.js"></script>
+    <script src="js/jq.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

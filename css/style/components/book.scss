@@ -1,0 +1,109 @@
+@use "../abstracts" as *;
+section.book{
+    position: relative;
+    &::before{
+        @include shapeNav($w: 100%, $h: 100%, $color:rgba(0, 0, 0, 0.491), $opacity: 1, $border-color:transparent);
+        @include Position($type: absolute, $t: 0,$l: 0);
+    }
+    @include flexCenter();
+    background-image: url("../imgs/contact-bg.jpg");
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+    .box{
+        width: 500px;
+        @include flexCenter(column);
+        padding: 20px 40px;
+        .imgBg{
+        @include Position($type: absolute, $t: 0, $r: 0);
+        @include size($w:50px, $h:100%);
+        @include responsive(350){
+            width: 20px;
+        }
+        }
+        .imgBg2{
+            left: 0;
+        }
+        .logo{
+            @include flexCenter();
+        }
+        .shapes{
+            @include flexCenter();
+            img{
+                width: 40px;
+            }
+        }
+        .formMajor{
+            form{
+                .first{
+                    @include flexCenter();
+                    @include responsive(350){
+                        @include flexCenter(column);
+                        gap: 0!important;
+                    }
+                    @include responsive(650){
+                        @include flexCenter();
+                        gap: 0!important;
+                    }
+                    @include responsive(650){
+                        gap: 40px!important;
+                    }
+                    gap: 40px;
+                    .con{
+                        @include flexCenter();
+                        &.MailCon{
+                            @include responsive(350) {
+                                margin-top: 1.5rem!important;
+                            }
+                            @include responsive(650){
+                                margin-top: 0!important;
+                                gap: 40px!important;
+                            }
+                        }
+                        input{
+                            background-color: transparent;
+                            border: 2px solid rgb(118, 118, 118);
+                            outline: 0!important;
+                            color: white;
+                            padding: 8px 15px;
+                            border-radius: 7px;
+                            transition: all 0.5s;
+                            &::placeholder{
+                                color: rgb(118, 118, 118);
+                                font-family: "DM Sans", sans-serif;
+                            }
+                            &:focus{
+                                border: 2px solid rgb(255, 255, 255);
+                            }
+                            
+                        }
+                    }
+                }
+                .textAreaCon{
+                    textarea{
+                        background-color: transparent;
+                        border: 2px solid rgb(118, 118, 118);
+                        outline: 0 !important;
+                        color: white;
+                        padding: 8px 15px;
+                        border-radius: 7px;
+                        resize: none;
+                        transition: all 0.5s;
+                        &::placeholder{
+                            color: rgb(118, 118, 118);
+                            font-family: "DM Sans", sans-serif;
+                        }
+                        &:focus{
+                            border: 2px solid rgb(255, 255, 255);
+                        }
+                    }
+                }
+                .btnCon{
+                    button{
+                        width: 100%;
+                        transition-delay: 0s!important;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,186 @@
+@use "../abstracts" as *;
+.pop-up-menu{
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #e4c590c5;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: -10;
+    overflow-y: auto;
+    overflow-x: hidden !important;
+    transition: all 1s;
+    .exit{
+            @include Position($type: absolute, $t: 10px, $r: 10px);
+            button{
+                background-color: transparent;
+                border: 0;
+                img{
+                    width: 50px;
+                }
+            }
+    }
+    &.show {
+        opacity: 1 !important;
+        z-index: 10000 !important;
+        .pop-up-menu-box{
+            opacity: 1!important;
+            transform: translateY(0)!important;
+        }
+    }
+    .pop-up-menu-box{
+        width: 650px;
+        @include responsive(350){
+            width: 100%;
+            margin: 0!important;
+        }
+        @include responsive(650){
+            width: 450px;
+            margin: auto!important;
+            margin-top: 10px !important;
+        }
+        @include responsive(850){
+            width: 650px;
+        }
+        margin: auto;
+        margin-top: 10px;
+        transform: translateY(-110%);
+        opacity: 0;
+        transition: all 1s;
+        padding: 20px;
+        border-radius: 15px;
+        .title{
+            img{
+                width: 50px;
+            }
+            h5{
+                font-size: 20px;
+            }
+        }
+        .head{
+            .coverCarosal{
+                width: 600px;
+                @include responsive(350){
+                    width: 100%;
+                }
+                @include responsive(850){
+                    width: 600px;
+                }
+                border-radius: 15px;
+                margin: auto;
+                overflow: hidden;
+                .carousel{
+                    .carousel-inner{
+                        position: relative;
+                        &.carousel-inner2{
+                            @for $i from 1 through 6 {
+                                .item#{$i} {
+                                    @include bgImg();
+                                    background-image: url("/imgs/L-#{$i}.png");
+                                }
+                            }
+                        }
+                        &.carousel-inner3{
+                            @for $i from 1 through 6 {
+                                .item#{$i} {
+                                    @include bgImg();
+                                    background-image: url("/imgs/Di-#{$i}.webp");
+                                }
+                            }
+                        }
+                        &.carousel-inner4{
+                            @for $i from 1 through 6 {
+                                .item#{$i} {
+                                    @include bgImg();
+                                    background-image: url("/imgs/Dr-#{$i}.webp");
+                                }
+                            }
+                        }
+                        .carousel-item{ 
+                            position: relative;
+                            z-index: 1;
+                            opacity: 0;
+                            transition: opacity 0.3s ease-in-out;
+                            height: 400px;
+                            @include responsive(350){
+                                height: 350px;
+                            }
+                            @include responsive(850){
+                                height: 400px;
+                            }
+                            &::before{
+                                @include shapeNav($w: 100%, $h: 100%, $color:rgba(0, 0, 0, 0.411), $opacity: 1, $border-color:transparent);
+                                @include Position($type: absolute, $t: 0, $l: 0);
+                            }
+                            &.active {
+                                opacity: 1;
+                                position: relative; // خلي العنصر النشط يحتل المكان الطبيعي
+                            }
+                            @include flexCenter();
+                            
+                            .headTitle{
+                                padding: 10px;
+                                @include Position($type: absolute, $b: 20px, $l: 0);
+                                z-index: 11;
+                                h2{
+                                    margin-bottom: 0;
+                                }
+                            }
+                            
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                    .control {
+                        z-index: 3;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        &:hover {
+                            &::before {
+                                transform: rotate(30deg);
+                            }
+                        }
+                        &::before {
+                            position: absolute;
+                            transition: all 0.5s;
+                            @include responsive(350){
+                                @include size($w:30px!important,$h:30px!important);
+                            }
+                            @include shapeNav($w: 50px, $h: 50px, $color: transparent, $opacity: 1, $border-color: $x);
+                        }
+                        i.iconControll {
+                            color: $x !important;
+                        }
+                    }
+
+                    .carousel-control-prev {
+                        left: 10px;
+
+                        &:hover {
+                            &::before {
+                                transform: rotate(-30deg);
+                            }
+                        }
+                    }
+
+                    .carousel-control-next {
+                        right: 10px;
+                    }
+                }
+            }
+        }
+        .tail {
+            padding: 22px;
+            p {
+                
+                color: white;
+            }
+        }
+    }
+}

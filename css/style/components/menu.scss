@@ -1,0 +1,195 @@
+@use "../abstracts" as *;
+section.menu{
+    .container{
+        .title{
+            h5{
+                @include responsive(350){
+                    font-size: 27px;
+                }
+            }
+        }
+        .mainText{
+            h2{
+                margin-left: 22px;
+                color: white;
+                font-size: 60px;
+                @include responsive(350){
+                    font-size: 37px;
+                }
+            }
+        }
+        .mainMenu{
+            @include flexCenter(column);
+            .cover{
+                overflow-x: auto;
+                overflow-y: hidden;
+                white-space: nowrap;
+                width: 100%;
+                ul.nav-pills {
+                    margin: auto;
+                    @include flexCenter();
+                    @include responsive(350) {
+                        flex-wrap: nowrap;
+                        width: max-content!important;
+                    }
+                    gap: 20px;
+                    border: 2px solid #7d7d7e;
+                    border-inline:0;
+                    padding: 12px;
+                    span {
+                        @include flexCenter();
+            
+                        img {
+                            margin-top: 5px;
+                            width: 30px;
+                        }
+                    }
+                    li.nav-item {
+                        padding: 5px;
+            
+                        button {
+                            background-color: transparent !important;
+                            font-size: 19px;
+                            font-weight: 300;
+                            font-family: "DM Sans", sans-serif;
+                            color: white;
+            
+                            &.active {
+            
+                                &::before,
+                                &::after {
+                                    left: 0;
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .tab-pane{
+            &.active.show{
+                .meal{
+                    opacity: 1!important;
+                    transform: translate(0px,0px)!important;
+                }
+            }
+            .row{
+                .column{
+                    .item{
+                    padding: 10px;
+                    @include flexCenter(column);
+                    .meal{
+                        @include flexCenter();
+                        &.meal1{
+                            transition-delay: 0.2s;
+                        }
+                        &.meal2{
+                            transition-delay: 0.4s;
+                        }
+                        &.meal3{
+                            transition-delay: 0.6s;
+                        }
+                        &.meal4{
+                            transition-delay: 0.8s;
+                        }
+                        &.meal5{
+                            transition-delay: 1s;
+                        }
+                        &.meal6{
+                            transition-delay: 1.2s;
+                        }
+                        transform: translate(-20px,-30px);
+                        opacity: 0;
+                        transition: all 1s;
+                        margin-top: 50px;
+                        &:hover{
+                            .mealImg{
+                                .shape{
+                                    opacity: 1;
+                                    i{
+                                        transform: rotate(0);
+                                    }
+                                }
+                                img{
+                                    transform: scale(1.1);
+                                }
+                            }
+                        }
+                        .mealImg{
+                            position: relative;
+                            margin-inline: 15px;
+                            border-radius: 10px;
+                            overflow: hidden;
+                            cursor: pointer;
+                            .shape{
+                                @include flexCenter();
+                                @include Position($type: absolute, $t: 0, $l: 0);
+                                @include size($w:100%,$h:100%);
+                                background-color: #e4c590c0;
+                                opacity: 0;
+                                transition: all 0.5s;
+                                z-index: 2;
+                                i{
+                                    color: black;
+                                    font-size: 25px;
+                                    transform: rotate(-45deg);
+                                    transition: all 0.5s;
+                                }
+                            }
+                            img{
+                                @include responsive(350) {
+                                    width: 80px !important;
+                                }
+                                width: 120px;
+                                transition: all 0.5s;
+                            }
+                        }
+                        .mealText{
+                            .upper{
+                                h4{
+                                    @include responsive(350){
+                                        font-size: 16px;
+                                        width: max-content;
+                                    }
+                                }
+                                height: 40px;
+                                @include flexCenter();
+                                gap: 40px;
+                                justify-content: flex-start;
+                                .line{
+                                    @include responsive(350){
+                                        width: 10px!important;
+                                    }
+                                    transform: rotate(-90deg);
+                                    width: 30px;
+                                    overflow: hidden;
+                                    @include flexCenter();
+                                    img {
+                                        @include responsive(350){
+                                            height: 80px!important;
+                                        }
+                                        height: 130px;
+                                        transform: scaleY(1);
+                                    }
+                                }
+                            }
+                            .down{
+                                p{
+                                    font-size: 15px;
+                                    @include responsive(350){
+                                        font-size: 10px;
+                                    }
+                                    @include responsive(850){
+                                        font-size: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                }
+            }
+        }
+    }
+}

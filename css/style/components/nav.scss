@@ -1,0 +1,91 @@
+@use "../abstracts" as *;
+nav{
+    @include flexCenter();
+    @include Position($type: fixed, $t: 0, $r: 0);
+    width: 100%;
+    z-index: 1000;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 15px 80px;
+    transition: all 0.5s;
+    @include responsive(350){
+        padding: 10px 20px;
+    }
+    @include responsive(850){
+        padding: 10px 30px;
+    }
+    .nav-logo{
+        img{
+            width: 160px;
+            @include responsive(350) {
+                width: 130px;
+            }
+            @include responsive(350) {
+                width: 150px;
+            }
+        }
+    }
+    .nav-links{
+        @include responsive(350){
+            display: none;
+        }
+        @include responsive(1050){
+            display: initial!important;
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            @include flexCenter();
+            li{
+                @include flexCenter();
+                &.active{
+                    a{
+                        color: $x;                   
+                        &::before,
+                        &::after {
+                            left: 0;
+                            width: 100%;
+                        }
+                    }
+                }
+                &:not(:last-child){
+                    margin-right: 15px;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    position: relative;
+                    font-family: "DM Sans", sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                    transition: all 0.5s;                   
+                    &::before,&::after{
+                        @include shapeNav($w: 100%, $h: 1.5px, $color:$x, $opacity: 1, $border-color:transparent);
+                        @include Position($type: absolute, $b: -2px, $l: 50%);
+                        border: none!important;
+                        width: 0;
+                        transition: all 0.6s;
+                    }
+                    &::after{
+                        bottom: -6px;
+                    }
+                    &:hover{
+                        color: $x;
+                        &::before,&::after{
+                            left: 0;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .nav-button{
+        cursor: pointer;
+        img{
+            width: 50px;
+        }
+        
+    }
+}

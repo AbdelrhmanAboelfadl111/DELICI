@@ -1,0 +1,93 @@
+@use "../abstracts" as *;
+section.about{
+    .imgBg{
+        @include Position($type: absolute, $t: 0, $r: 0);
+        @include size($w:50px, $h:100%);
+        @include responsive(350){
+            width: 20px;
+        }
+    }
+    .imgBg2{
+        left: 0;
+    }
+    .aboutText{
+        h2{
+            font-size: 45px;
+            @include responsive(350){
+                font-size: 35px;
+            }
+            @include responsive(650){
+                font-size: 45px;
+            }
+        }
+        p{
+            font-size: 16px;
+            @include responsive(350){
+                width: 100%!important;
+                font-size: 12px;
+            }
+            @include responsive(650){
+                font-size: 15px;
+            }
+        }
+    }
+    .aboutImgs{
+        
+        .col1,.col3{
+            transform: translateY(-90px);
+            @include responsive(350){
+                transform: translateY(0);
+            }
+            @include responsive(1050){
+                transform: translateY(-90px);
+            }
+        }
+        .column{
+            .item{
+                padding: 20px;
+                .head{
+                    @include flexCenter();
+                    position: relative;
+                    border-radius: 15px;
+                    overflow: hidden;
+                    &:hover{
+                        .shape{
+                            top: -150%;
+                            right: 80%;
+                        }
+                        .img1{
+                            transform: rotateY(360deg);
+                        }
+                    }
+                    .shape{
+                        @include Position($type: absolute, $t: 100%, $r: -10%);
+                        @include size($w:70px, $h:200%);
+                        background-color: rgba(186, 186, 186, 0.358);
+                        backdrop-filter: blur(10px);
+                        box-shadow: rgba(169, 169, 169, 0.671) -10px 5px 15px;
+                        transform: rotate(45deg);
+                        transition: all 0.8s;
+                        z-index: 3;
+                    }
+                    .img1{
+                        width: 150px;
+                        transition: all 1s;
+                    }
+                    .img2{
+                        position: absolute;
+                    }
+                }
+                .body{
+                    h3{
+                        font-size: 35px;
+                    }
+                    a{
+                        color: $x;
+                        font-size: 17px;
+                        padding: 3px;
+                    }
+                }
+            }
+        }
+    }
+}

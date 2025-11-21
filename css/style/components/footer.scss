@@ -1,0 +1,15 @@
+@use "../abstracts" as *;
+footer{
+    @include flexCenter();
+    padding: 20px;
+    p{
+        color: white;
+        @include responsive(350){
+            font-size: 15px;
+        }
+        a{
+            text-decoration: none;
+            color: $x;
+        }
+    }
+}

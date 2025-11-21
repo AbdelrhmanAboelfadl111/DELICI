@@ -1,0 +1,51 @@
+@use "../abstracts" as *;
+section.special{
+    position: relative;
+    .dishTitle{
+        h2{
+            font-size: 50px;
+            @include responsive(350) {
+                font-size: 43px;
+            }
+        }
+    }
+    .dishPrise{
+        .oldPrise{
+            color:#686868;
+            font-size: 25px;
+            margin-right: 10px!important;
+        }
+        .newPrise{
+            font-size: 25px;
+            margin-left: 10px !important;
+        }
+    }
+    .col1{
+        .mainDish{
+            padding: 20px;
+            .headshaped{
+                @include responsive(350){
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+    .imgBg {
+        @include Position($type: absolute, $t: 0, $r: 0);
+        @include size($w: 50px, $h: 100%);
+        @include responsive(350) {
+            width: 40px;
+        }
+    }
+    .imgBg2 {
+        left: 0;
+    }
+    .col2{
+        @include responsive(350){
+            padding-inline: 50px;
+        }
+        @include responsive(450){
+            padding-inline: 40px!important;
+        }
+    }
+}

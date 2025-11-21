@@ -1,0 +1,197 @@
+@use "variables" as *;
+@use "mixin" as *;
+* {
+    scroll-behavior: auto !important;
+}
+.font1{
+    font-family: "Forum", serif;
+}
+.font2{
+    font-family: "DM Sans", sans-serif;
+}
+.color1{
+    color: #E4C590;
+}
+.title{
+    padding: 20px;
+    img{
+        width: 120px;
+    }
+}
+.anchorShaped{
+    text-decoration: none;
+    position: relative;
+    &::before,
+        &::after {
+            @include shapeNav($w: 100%, $h: 1.5px, $color: $x, $opacity: 1, $border-color: transparent);
+            @include Position($type: absolute, $b: -2px, $l: 50%);
+            border: none !important;
+            width: 0;
+            transition: all 0.6s;
+        }
+    
+        &::after {
+            bottom: -6px;
+        }
+    
+        &:hover {
+            color: $x;
+    
+            &::before,
+            &::after {
+                left: 0;
+                width: 100%;
+            }
+        }
+}
+.buttonShaped{
+    position: relative;
+    color: $x;
+    border: 2px solid $x;
+    padding: 12px 40px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.5s;
+    transition-delay: 1s;
+    &:hover {
+        color: black;
+        &::after,
+        &::before {
+            transform: translateY(0);
+        }
+    }
+    &::after,
+    &::before {
+        @include shapeNav($w: 100%, $h: 50%, $color: $x, $opacity: 1, $border-color: transparent);
+        position: absolute;
+        left: 0;
+        transition: all 0.5s;
+        z-index: -1;
+    }
+    &::after {
+        bottom: 0;
+        transform: translateY(100%);
+    }
+    &::before {
+        top: 0;
+        transform: translateY(-100%);
+    }
+}
+.headshaped {
+    @include flexCenter();
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+
+    &:hover {
+        .shape {
+            top: -150%;
+            right: 80%;
+        }
+
+        .img1 {
+            transform: rotateY(360deg);
+        }
+    }
+
+    .shape {
+        @include Position($type: absolute, $t: 100%, $r: -10%);
+        @include size($w: 70px, $h: 200%);
+        background-color: rgba(186, 186, 186, 0.358);
+        backdrop-filter: blur(10px);
+        box-shadow: rgba(169, 169, 169, 0.671) -10px 5px 15px;
+        transform: rotate(45deg);
+        transition: all 0.8s;
+        z-index: 3;
+    }
+
+    .img1 {
+        width: 150px;
+        transition: all 1s;
+    }
+
+    .img2 {
+        position: absolute;
+    }
+}
+button.shaped {
+    opacity: 1;
+    transform: translateY(0);
+    position: initial !important;
+
+    a {
+        transition: all 0.5s;
+        text-decoration: none;
+        position: relative;
+        z-index: 3;
+    }
+
+    &:hover {
+        border: 2px solid $x;
+
+        a {
+            color: black;
+        }
+    }
+}
+.title.iconed {
+    .titleCover {
+        @include flexCenter();
+
+        img {
+            width: 60px;
+        }
+
+        h5 {
+            margin-bottom: 0;
+            font-size: 30px;
+        }
+    }
+
+    img.separator {
+        transform: scale(1.6);
+        margin-left: 22px;
+    }
+}
+.scrolled{
+    @include bgImg();
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+    background-repeat: repeat !important;
+    background-size: initial !important;
+    background-attachment: fixed;
+    background-image: url("../imgs/bg.png");
+    background-color: #0e0d0c;
+    padding: 20px;
+}
+.bgImg{
+    @include bgImg();
+    background-repeat: repeat !important;
+    background-size: initial !important;
+    background-attachment: fixed;
+    background-image: url("../imgs/bg.png");
+    background-color: #0e0d0c;
+    position: relative;
+}
+.vistdetail {
+    .detail {
+        @include flexCenter();
+
+        img {
+            width: 40px;
+            margin-bottom: 5px;
+            margin-right: 2px;
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.687);
+            font-size: 15px;
+            @include responsive(350){
+                font-size: 13px;
+            }
+            @include responsive(650){
+                font-size: 15px;
+            }
+        }
+    }
+}
