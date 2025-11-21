@@ -80,7 +80,7 @@
                             @for $i from 1 through 6 {
                                 .item#{$i} {
                                     @include bgImg();
-                                    background-image: url("/imgs/L-#{$i}.png");
+                                    background-image: url("../imgs/L-#{$i}.png");
                                 }
                             }
                         }
@@ -88,7 +88,7 @@
                             @for $i from 1 through 6 {
                                 .item#{$i} {
                                     @include bgImg();
-                                    background-image: url("/imgs/Di-#{$i}.webp");
+                                    background-image: url("../imgs/Di-#{$i}.webp");
                                 }
                             }
                         }
@@ -96,7 +96,7 @@
                             @for $i from 1 through 6 {
                                 .item#{$i} {
                                     @include bgImg();
-                                    background-image: url("/imgs/Dr-#{$i}.webp");
+                                    background-image: url("../imgs/Dr-#{$i}.webp");
                                 }
                             }
                         }
